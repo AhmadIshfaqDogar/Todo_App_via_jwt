@@ -22,7 +22,7 @@ const TodoApp = ({ onLogout }) => {
  
   useEffect(() => {
     fetchTodos();
-  }, []);
+  }, [fetchTodos]);
 
   const fetchTodos = async () => {
     setLoading(true);
